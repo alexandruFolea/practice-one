@@ -1,6 +1,39 @@
-.container {
-	// @include flex-center-row;
+body {
+	background: $very-dark-blue;
+}
+
+.main__container {
+	font-family: $main-font;
+	padding-top: 5rem;
+	margin: 0 4rem 0 4rem;
 	height: 100vh;
-	background: $blue-300;
-	font-size: 10rem;
+	// background: $light-red;
+
+	.user__card {
+		padding: 0 2rem 0 2rem;
+		height: 10rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+		background-color: $desat-blue;
+		border-radius: 0.5rem;
+		margin-bottom: 5rem;
+
+		&__image {
+			border: 3px solid white;
+			border-radius: 50%;
+		}
+
+		&__info {
+			color: white;
+
+			&__report {
+				opacity: 60%;
+			}
+			&__name {
+				font-size: 2rem;
+			}
+		}
+	}
 }
